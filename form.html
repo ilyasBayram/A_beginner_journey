@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register.php">
+      <h1>Make Sure You Fill Out All Informations</h1>
+      <hr />
+      <div>
+        <h2>Account Information</h2>
+        <table cellspacing="5">
+          <tr>
+            <td>
+              <label for="user_name"><strong>User Name: </strong></label>
+            </td>
+            <td style="width: 50px"></td>
+            <td>
+              <input
+                type="text"
+                id="user_name"
+                name="name"
+                placeholder="name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email"><strong>Email:</strong></label>
+            </td>
+            <td></td>
+            <td>
+              <input type="email" id="email" name="email" placeholder="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="password"><strong>Password:</strong></label>
+            </td>
+            <td></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <h2>Personal Information</h2>
+        <table cellspacing="5">
+          <tr>
+            <td>
+              <label for="name"><strong>Name:</strong></label>
+            </td>
+            <td style="width: 50px"></td>
+            <td>
+              <input type="text" id="name" name="name" placeholder="name" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="surname"><strong>Surname :</strong></label>
+            </td>
+            <td></td>
+            <td>
+              <input
+                type="text"
+                id="surname"
+                name="surname"
+                placeholder="surname"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="city"><strong>City :</strong></label>
+            </td>
+            <td></td>
+            <td>
+              <select id="city">
+                <option>Choose</option>
+                <option value="Ankara">Anakara</option>
+                <option value="Istanbul">İstanbul</option>
+                <option value="Izmir">İzmir</option>
+                <option value="Antalya">Antalya</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="gender"><strong>Gende :</strong></label>
+            </td>
+            <td></td>
+            <td>
+              <input type="radio" name="gender" /> Male
+              <input type="radio" name="gender" /> Female
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <input type="submit" value="Send" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
