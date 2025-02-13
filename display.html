@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+
+      /* converting divs to inline-blocks */
+      #first {
+        display: inline-block;
+        background-color: red;
+      }
+      #second {
+        display: inline-block;
+        background-color: green;
+      }
+      #third {
+        display: inline-block;
+        background-color: blue;
+      }
+
+      a {
+        display: inline-block;
+        margin: 10px;
+        padding-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box" id="first">First</div>
+      <div class="box" id="second">second</div>
+      <div class="box" id="third">Third</div>
+
+      <!-- how to center text in a div -->
+
+      <div
+        class="box1"
+        id="fourth"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: yellow;
+        "
+      >
+        Centered Text
+      </div>
+    </div>
+    <div>
+      <a href="index.html">Back</a>
+      <a href="display.html">Next</a>
+      <a href="flex.html">Flex</a>
+    </div>
+    <div>
+      <!-- create a button to delete, show and hide the div -->
+
+      <button onclick="document.getElementById('fourth').style.display='none'">
+        Delete
+      </button>
+      <button
+        onclick="document.getElementById('fourth').style.display='flex'; document.getElementById('fourth').style.visibility = 'visible'"
+      >
+        Show
+      </button>
+      <button
+        onclick="document.getElementById('fourth').style.visibility='hidden'"
+      >
+        Hide
+      </button>
+    </div>
+  </body>
+</html>
