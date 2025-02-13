@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        border: 1px solid black;
+        padding: 5px 8px;
+        display: inline-block;
+        text-decoration: none;
+        width: 80px;
+        text-align: center;
+      }
+
+      /* combinators */
+      /* ~ is used to select the all sibling p element after the element  */
+      /* + is used to select the immediate sibling element */
+      /* if you use space it will select all the p element after the element  */
+      /* if you use > it will select the immediate child element  */
+
+      /* two hover can be used together by separating them with a comma */
+      a:hover,
+      a:hover ~ p {
+        color: red;
+      }
+
+      a:active + p {
+        background-color: #0c1ccc;
+      }
+
+      a:visited {
+        color: #ccc;
+      }
+
+      p {
+        background-color: #ccc;
+        padding: 10px;
+        border: 1px solid black;
+        margin: 20;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google1.com">Google</a>
+    <a href="https://www.facebook1.com">Facebook</a>
+    <a href="https://www.twitter1.com">Twitter</a>
+  </body>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima
+    numquam voluptatibus eum totam explicabo inventore aliquam aperiam commodi
+    nulla placeat distinctio error quidem earum corrupti, voluptas, minus
+    possimus autem?
+  </p>
+</html>
